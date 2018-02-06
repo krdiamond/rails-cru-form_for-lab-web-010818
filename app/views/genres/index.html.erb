@@ -1,0 +1,9 @@
+
+<h1>ALL GENRES:</h1>
+<% @genres.each do |each_genre| %>
+<ul>
+  <li>
+    <%= link_to each_genre.name, genre_path(each_genre)  %>
+  </li>
+</ul>
+<% end %>
